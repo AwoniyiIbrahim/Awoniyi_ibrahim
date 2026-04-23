@@ -1,0 +1,55 @@
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 700px;
+}
+
+
+
+.skill-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.skill-name {
+  font-size: 13px;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-badge {
+  font-size: 10px;
+  padding: 2px 8px;
+  border: 1px dashed var(--amber);
+  color: var(--amber);
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.skill-percent {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.skill-track {
+  height: 3px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.skill-bar {
+  height: 100%;
+  border-radius: 2px;
+}
+
+.skills-note {
+  margin-top: 28px;
+  font-size: 11px;
+  color: var(--muted);
+  font-style: italic;
+}

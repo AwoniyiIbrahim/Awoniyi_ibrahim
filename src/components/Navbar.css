@@ -1,0 +1,130 @@
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  display: flex;
+  align-items: center;
+  padding: 16px 40px;
+  background: rgba(3, 7, 18, 0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  z-index: 1000;
+  gap: 32px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--heading);
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  transition: transform 180ms ease, filter 180ms ease, opacity 180ms ease;
+  will-change: transform;
+}
+
+.site-title {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.navbar-logo:hover .logo-img {
+  transform: translateY(-2px) scale(1.06);
+  filter: drop-shadow(0 8px 20px rgba(0, 207, 255, 0.12)) drop-shadow(0 2px 8px rgba(0,255,159,0.08));
+  opacity: 1;
+}
+
+.navbar-logo .site-title {
+  color: var(--text);
+}
+
+.logo-accent {
+  color: var(--green);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+  padding: 6px 14px;
+  border-radius: 4px;
+  transition: color 0.2s, background 0.2s;
+  letter-spacing: 0.5px;
+}
+
+.nav-btn:hover,
+.nav-btn.active {
+  color: var(--green);
+  background: rgba(0, 255, 159, 0.08);
+}
+
+.nav-slash {
+  opacity: 0.4;
+  font-size: 10px;
+}
+
+.nav-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--green);
+  white-space: nowrap;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(0, 255, 159, 0.4); }
+  50%       { opacity: 0.7; box-shadow: 0 0 0 6px rgba(0, 255, 159, 0); }
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar { padding: 16px 24px; gap: 16px; }
+
+  .navbar-links {
+    display: none;
+    position: fixed;
+    top: 60px; left: 0; right: 0;
+    background: rgba(3, 7, 18, 0.98);
+    flex-direction: column;
+    padding: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .navbar-links.open { display: flex; }
+  .nav-status        { display: none; }
+  .menu-toggle       { display: block; }
+}

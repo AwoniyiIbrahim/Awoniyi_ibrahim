@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="256" height="256" role="img" aria-label="IB logo">
+  <title>IB</title>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#00ff9f"/>
+      <stop offset="100%" stop-color="#00cfff"/>
+    </linearGradient>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- background rounded square with soft stroke -->
+  <rect x="6" y="6" width="108" height="108" rx="16" fill="#030712" stroke="rgba(0,255,159,0.12)" stroke-width="1.6"/>
+
+  <!-- glowing gradient ring behind the monogram -->
+  <circle cx="60" cy="60" r="36" fill="none" stroke="url(#g)" stroke-width="6" opacity="0.16" filter="url(#glow)"/>
+
+  <!-- IB monogram centered inside the ring -->
+  <text x="60" y="60" font-family="Orbitron,Arial,Helvetica,sans-serif" font-weight="900" font-size="44" text-anchor="middle" dominant-baseline="middle" fill="url(#g)">IB</text>
+
+  <!-- small accent dot for brand mark -->
+  <circle cx="94" cy="30" r="3" fill="#00ff9f" opacity="0.95"/>
+</svg>
