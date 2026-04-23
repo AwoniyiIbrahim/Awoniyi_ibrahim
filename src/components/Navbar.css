@@ -126,5 +126,5 @@
 
   .navbar-links.open { display: flex; }
   .nav-status        { display: none; }
-  .menu-toggle       { display: block; }
+  .menu-toggle       { display: block; margin-left: auto; }
 }
