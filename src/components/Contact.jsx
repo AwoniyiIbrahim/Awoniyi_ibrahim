@@ -14,9 +14,9 @@ export default function Contact() {
       </a>
 
       <div className="social-row">
-        <a href="#" className="social-btn">GitHub</a>
-        <a href="#" className="social-btn">LinkedIn</a>
-        <a href="#" className="social-btn">Twitter</a>
+        <a href="https://github.com/AwoniyiIbrahim/" className="social-btn">GitHub</a>
+        <a href="https://www.linkedin.com/in/ibrahim-awoniyi-8a0808295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className="social-btn">LinkedIn</a>
+        <a href="https://x.com/iawoniyi40480?s=21" className="social-btn">Twitter</a>
       </div>
 
     </section>
