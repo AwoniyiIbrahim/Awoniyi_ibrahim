@@ -53,6 +53,15 @@ export const projects = [
     github: 'https://github.com/AwoniyiIbrahim/CV',
     featured: false,
   },
+  {
+    id: '06',
+    name: 'UniMarket',
+    desc: 'A full-stack campus marketplace platform for university students to buy, sell, and trade items securely. Features include user authentication with Google OAuth, product listings, reviews, wishlists, and admin dashboard with comprehensive testing and monitoring.',
+    stack: ['React', 'FastAPI', 'PostgreSQL', 'JWT', 'Google OAuth'],
+    live: "https://www.unimarket-place.name.ng/",
+    github: "https://github.com/AwoniyiIbrahim/market-place",
+    featured: true,
+  },
 ]
 
 export const navItems = ['home', 'skills', 'projects', 'about', 'contact']
@@ -70,7 +79,7 @@ export const terminalLines = [
 ]
 
 export const stats = [
-  { num: '5+', label: 'projects shipped' },
+  { num: '6+', label: 'projects shipped' },
   { num: '2+', label: 'years coding' },
   { num: '3',  label: 'core languages' },
 ]
